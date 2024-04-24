@@ -18,7 +18,7 @@ int main() {
   printf("      N O T A  L E G A L    \n");
   printf("----------------------------\x1b[0m\n");
   printf("ITEM            QTD  VALOR  \n");
-  printf("%-15s %03i \x1b[34m%7.2f\x1b[0m\n" , nome, quantidade, valor);
+  printf("%-15s %03i \x1b[34m %02.4f\x1b[0m\n" , nome, quantidade, valor);
   
   return 0;
 }
