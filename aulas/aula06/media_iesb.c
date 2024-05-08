@@ -16,7 +16,20 @@ int main() {
     int nota2_eh_valida = nota2 >= 0.0f && nota2 <= 10.0f;
     if (nota2_eh_valida) {
       float media = 0.4 * nota1 + 0.6 * nota2;
-      printf("A média iesb é %.1f", media);
+      printf("A média iesb é %.1f\n", media);
+      if (media >= 9.0f && media <= 10.0f) {
+        printf("A menção iesb é SS\n");
+      } else if (media >= 7.0f && media <= 8.9f) {
+        printf("A menção iesb é MS\n");
+      } else if (media >= 5.0f && media <= 6.9f) {
+        printf("A menção iesb é MM\n");
+      } else if (media >= 3.0f && media <= 4.9f) {
+        printf("A menção iesb é MI\n");
+      } else if (media >= 0.1f && media <= 2.9f) {
+        printf("A menção iesb é II\n");
+      } else if (media == 0.0f) {
+        printf("A menção iesb é SR\n");
+      }
     } else {
       printf("Nota Inválida! Informe um valor entre 0.0 e 10.0\n");
     }
